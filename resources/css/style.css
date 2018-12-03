@@ -1,0 +1,508 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 1366px;
+  max-height: 1080px;
+  margin: auto;
+}
+
+/* Company Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.title {
+  display: flex;
+  font-weight: bold;
+}
+
+.title-a {
+  color: dimgray;
+}
+
+.title-b {
+  color: lightgray;
+}
+
+nav {
+  padding-right: 1.5rem;
+}
+
+li {
+  display: inline-block;
+  color: dimgray;
+  padding-right: 1rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+.header {
+  height: 4rem;
+
+}
+
+.header ul {
+    display: none;
+  }
+
+.logo {
+  display: none;
+}
+
+.mobile {
+    display: block;
+    width: 100%;
+}
+
+.mobile {
+  max-height: ;
+}
+
+.mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+}
+/* Main Banner */
+
+.banner-container {
+  display: flex;
+  height: 45rem;
+  background-color: lightgray;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  max-width: 60%;
+  max-height: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30%;
+  color: dimgray;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 1.5rem;
+}
+
+.banner-button {
+  margin-top: 1rem;
+  background-color: dimgray;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+.info h1 {
+  font-size: 2rem;
+}
+
+.info p {
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+.banner {
+  display: block;
+}
+
+.banner-text {
+  max-width: 100%;
+
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.info p {
+  padding-top: 2rem;
+}
+
+.banner-button {
+  margin-top: 1.5rem;
+}
+
+
+.banner img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.banner-container {
+  height: 35.9rem;
+}
+
+}
+
+/* 2nd Banner */
+
+.banner-container-2 {
+  display: flex;
+  height: 45rem;
+  background-color: white;
+}
+
+.banner-info {
+  max-width: 60%;
+  color: dimgray;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  line-height: 1.2;
+}
+
+.banner-info img {
+  max-width: 100%;
+}
+
+.banner-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top:2rem;
+}
+
+.banner-info p {
+  padding-top: 1.5rem;
+}
+
+.contact {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.banner-info-column {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.row img {
+  max-height: auto;
+  max-width: 35%;
+  margin: 1rem;
+}
+
+.row-text {
+  color: dimgray;
+  max-height: auto;
+  max-width: 65%;
+}
+
+.row-text h1 {
+  font-weight: bold;
+}
+
+.row-text p {
+  padding-top: 0.5rem;
+}
+
+p a {
+  color: cornflowerblue;
+}
+
+.campus {
+  margin-top: 1rem;
+}
+
+.guest {
+  background-color: lightgray;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner-info {
+    display: none;
+  }
+
+.banner-container-2 {
+  height: 60.6rem;
+}
+
+
+
+  .banner-info-column {
+
+    max-width: 100%;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+
+
+
+
+  }
+
+ .row {
+   display: block;
+
+
+ }
+
+ .row img {
+   display: none;
+ }
+
+ .mobile img {
+   max-width: 92%;
+   padding: 1rem;
+ }
+
+ .row-text {
+   margin-top: 0;
+   padding-left: 2rem;
+ }
+
+.guest {
+  margin-top: 0rem;
+  background-color: white;
+}
+
+
+
+.campus {
+  margin-top: 0rem;
+}
+
+.images {
+  margin-top: 2rem;
+}
+
+
+
+}
+
+/* Start Learning */
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+  color: dimgray;
+  background-color: lightgray;
+}
+
+.learning-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.learning {
+  display: flex;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.learning-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  line-height: 1.2;
+}
+
+.column-a {
+  background-color: white;
+}
+
+.column-a img {
+  height: auto;
+  width: 100%;
+}
+
+.column-text-a {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.column-text-a h1 {
+  font-weight: bold;
+}
+
+.column-text-a p {
+  padding-top: 0.5rem;
+}
+
+.column-b {
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.column-b img {
+  height: auto;
+  width: 100%;
+}
+
+.column-text-b {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.column-text-b h1 {
+  font-weight: bold;
+}
+
+.column-text-b p {
+  padding-top: 0.5rem;
+}
+
+.mobile-container {
+  display: none;
+}
+
+.extra {
+  margin-left: 2rem;
+}
+
+
+@media only screen and (max-width: 760px) {
+  .learning-heading {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .learning {
+    display: none;
+  }
+
+ .mobile-container {
+   display: block;
+   margin-left: 1rem;
+   margin-bottom: 2rem;
+
+ }
+
+ .mobile-container h1 {
+   padding-left: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1.5rem;
+   margin-top: .5rem;
+   background-color: lightgray;
+
+ }
+
+ .learning-container {
+   height: 31rem;
+   background-color: white;
+
+ }
+}
+
+
+/* Thesis exhibit */
+
+.thesis-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  color: dimgray;
+  border: 1px solid black;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-content {
+  display: flex;
+}
+
+.thesis {
+  margin-top: 0rem;
+}
+
+.banner-info video {
+  max-width: 100%;
+}
+
+.prototype {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .thesis-content {
+    display: none;
+  }
+
+ .mobile-video video {
+   max-width: 100%;
+   height: auto;
+   border: 1px solid black;
+ }
+
+.exhibit {
+  max-height: 20rem;
+}
+
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: dimgray;
+  padding: 3rem 1.5rem;
+
+}
+
+.exhibit .banner-info {
+  margin-bottom: 2rem;
+}
+
+.exhibit {
+  height: 43rem;
+}
