@@ -8,6 +8,7 @@ html {
 .container {
   max-width: 1366px;
   max-height: 1080px;
+  margin: auto;
 }
 
 /* Company Header */
