@@ -8,7 +8,6 @@ html {
 .container {
   max-width: 1366px;
   max-height: 1080px;
-  margin: auto;
 }
 
 /* Company Header */
@@ -45,52 +44,53 @@ nav {
 }
 
 li {
-  display: inline-block;
+  display: inline;
   color: dimgray;
   padding-right: 1rem;
 }
 
-.mobile {
-  display: none;
+.alt-heading {
+  display: none
 }
 
 @media only screen and (max-width: 760px) {
-
-.header {
-  height: 4rem;
-
-}
-
-.header ul {
+  .header ul {
     display: none;
   }
 
-.logo {
-  display: none;
-}
+  .title {
+    display: none;
+  }
 
-.mobile {
+  .logo img {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .alt-heading {
     display: block;
     width: 100%;
+  }
+
+  .alt-heading ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
-.mobile {
-  max-height: ;
-}
-
-.mobile ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-}
 /* Main Banner */
 
 .banner-container {
   display: flex;
-  height: 45rem;
+  max-height: 45rem;
   background-color: lightgray;
 }
 
@@ -101,17 +101,13 @@ li {
 
 .banner img {
   max-width: 60%;
-  max-height: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 1.5rem;
 }
 
 .banner-text {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 30%;
+  max-width: 24%;
   color: dimgray;
   font-weight: bold;
   line-height: 1.2;
@@ -119,6 +115,7 @@ li {
 }
 
 .banner-button {
+  max-width: 86%;
   margin-top: 1rem;
   background-color: dimgray;
   text-align: center;
@@ -136,43 +133,35 @@ li {
 }
 
 @media only screen and (max-width: 760px) {
+  .banner {
+    display: block;
+  }
 
-.banner {
-  display: block;
-}
+  .banner-text {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
 
-.banner-text {
-  max-width: 100%;
+  .info p {
+    padding-top: 2rem;
+  }
 
-  margin: 0;
-  padding: 2rem 1rem;
-}
+  .banner-button {
+    margin-top: 1.5rem;
+  }
 
-.info p {
-  padding-top: 2rem;
-}
-
-.banner-button {
-  margin-top: 1.5rem;
-}
-
-
-.banner img {
-  max-width: 100%;
-  margin: 0;
-}
-
-.banner-container {
-  height: 35.9rem;
-}
-
+  .banner img {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 /* 2nd Banner */
 
 .banner-container-2 {
   display: flex;
-  height: 45rem;
+  max-height: 45rem;
   background-color: white;
 }
 
@@ -205,7 +194,7 @@ li {
 }
 
 .banner-info-column {
-  max-width: 60%;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
@@ -219,15 +208,14 @@ li {
 }
 
 .row img {
-  max-height: auto;
-  max-width: 35%;
+  height: auto;
+  width: 35%;
   margin: 1rem;
 }
 
 .row-text {
   color: dimgray;
-  max-height: auto;
-  max-width: 65%;
+  width: 65%;
 }
 
 .row-text h1 {
@@ -236,81 +224,60 @@ li {
 
 .row-text p {
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 p a {
   color: cornflowerblue;
 }
 
-.campus {
-  margin-top: 1rem;
-}
-
 .guest {
   background-color: lightgray;
-  margin-top: 1rem;
+}
+
+.mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 760px) {
-  .banner-info {
+  .omit-mobile {
     display: none;
   }
 
-.banner-container-2 {
-  height: 60.6rem;
-}
-
-
+  .banner-container-2 {
+    max-height: 63rem;
+  }
 
   .banner-info-column {
-
     max-width: 100%;
     margin-left: 0rem;
     margin-top: 0rem;
     margin-bottom: 2rem;
+   }
 
+   .row img {
+     display: none;
+   }
 
+   .mobile {
+     display: block;
+     width: 100%;
+   }
 
+   .mobile img {
+     width: 92%;
+     margin: 1rem;
+   }
 
-  }
+   .row-text {
+     margin-top: 0;
+     padding-left: 2rem;
+   }
 
- .row {
-   display: block;
-
-
- }
-
- .row img {
-   display: none;
- }
-
- .mobile img {
-   max-width: 92%;
-   padding: 1rem;
- }
-
- .row-text {
-   margin-top: 0;
-   padding-left: 2rem;
- }
-
-.guest {
-  margin-top: 0rem;
-  background-color: white;
-}
-
-
-
-.campus {
-  margin-top: 0rem;
-}
-
-.images {
-  margin-top: 2rem;
-}
-
-
-
+   .guest {
+     margin-top: 0rem;
+     background-color: white;
+   }
 }
 
 /* Start Learning */
@@ -318,13 +285,12 @@ p a {
 .learning-container {
   display: flex;
   flex-direction: column;
-  height: 55rem;
+  max-height: 55rem;
   color: dimgray;
   background-color: lightgray;
 }
 
 .learning-heading {
-  width: 100%;
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
@@ -355,17 +321,17 @@ p a {
   width: 100%;
 }
 
-.column-text-a {
+.column-text {
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 
-.column-text-a h1 {
+.column-text h1 {
   font-weight: bold;
 }
 
-.column-text-a p {
+.column-text p {
   padding-top: 0.5rem;
 }
 
@@ -379,32 +345,16 @@ p a {
   width: 100%;
 }
 
-.column-text-b {
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-
-.column-text-b h1 {
-  font-weight: bold;
-}
-
-.column-text-b p {
-  padding-top: 0.5rem;
-}
-
 .mobile-container {
   display: none;
 }
 
-.extra {
+.left-margin {
   margin-left: 2rem;
 }
 
-
 @media only screen and (max-width: 760px) {
   .learning-heading {
-    display: block;
     padding-bottom: 1rem;
   }
 
@@ -415,9 +365,9 @@ p a {
  .mobile-container {
    display: block;
    margin-left: 1rem;
+   margin-right: 1rem;
    margin-bottom: 2rem;
-
- }
+  }
 
  .mobile-container h1 {
    padding-left: 1rem;
@@ -425,28 +375,22 @@ p a {
    padding-bottom: 1.5rem;
    margin-top: .5rem;
    background-color: lightgray;
-
- }
+  }
 
  .learning-container {
-   height: 31rem;
    background-color: white;
-
  }
 }
-
 
 /* Thesis exhibit */
 
 .thesis-heading {
-  width: 100%;
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-weight: bold;
   color: dimgray;
-  border: 1px solid black;
 }
 
 .exhibit {
@@ -456,38 +400,47 @@ p a {
 
 .thesis-content {
   display: flex;
+  margin-bottom: 2rem;
 }
 
-.thesis {
+.thesis-content .banner-info h1 {
+  padding-top: 1.5rem;
+}
+
+.thesis-content .banner-info p {
+  padding-top: .5rem;
+}
+
+.top-margin {
   margin-top: 0rem;
 }
 
 .banner-info video {
-  max-width: 100%;
+  width: 100%;
 }
 
 .prototype {
   background-color: lightgray;
 }
 
-@media only screen and (max-width: 760px) {
-
-  .thesis-content {
-    display: none;
+@media only screen and (max-width: 760px){
+  .thesis-heading {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 
- .mobile-video video {
-   max-width: 100%;
-   height: auto;
-   border: 1px solid black;
- }
+  .top-margin {
+    max-width: 100%;
+  }
 
-.exhibit {
-  max-height: 20rem;
+  .banner-info {
+    margin-left: 0rem;
+  }
+
+  .thesis-content {
+    margin-bottom: 1.5rem;
+  }
 }
-
-}
-
 
 /* Footer */
 
@@ -495,14 +448,16 @@ p a {
   display: flex;
   justify-content: space-between;
   color: dimgray;
-  padding: 3rem 1.5rem;
-
+  padding: 1rem 1.5rem;
 }
 
-.exhibit .banner-info {
-  margin-bottom: 2rem;
-}
+@media only screen and (max-width: 760px) {
+  .privacy {
+    display: none;
+  }
 
-.exhibit {
-  height: 43rem;
+  .footer p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
